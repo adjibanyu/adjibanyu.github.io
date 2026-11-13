@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;   
+}
+
+h1 {
+    color: #e4e5ed;
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li a {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #000211; /* warna teks link */
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #ad1919;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.foto-banyu {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+img {
+  max-width: 100%;     /* tidak boleh lebih lebar dari pembungkusnya */
+  height: auto;        /* tinggi menyesuaikan, supaya foto tidak gepeng */
+}
+
+@media (max-width: 600px) {
+  /* semua aturan di sini HANYA berlaku kalau lebar layar ≤ 600px */
+
+  .menu {
+    /*flex-direction: column;     susun ke BAWAH, bukan ke samping */
+  }
+
+  h1 {
+    font-size: 28px;           /* judul lebih kecil di HP */
+  }
+}
+
